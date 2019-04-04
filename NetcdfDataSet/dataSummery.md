@@ -1,6 +1,15 @@
 # Explore Data Set
 
 
+# Part I  NEMO MODEL DataSet
+## dyna_grid_T.nc
+## dyna_grid_U.nc
+## dyna_grid_V.nc
+## dyna_grid_W.nc
+
+## TIME 2092/01/01 --- 2092/12/31
+# ==========================================================
+
 # 1. dyna_grid_T.nc
 ## 1.1 info
 ![info](./dyna_grid_T_info.PNG)
@@ -22,7 +31,7 @@
 
 ### 3.4 [4] time_counter of type Single (time_counter:73)
 ![4](./dyna_grid_T_4.PNG)
-
+s
 ### 3.5 [5] votemper of type Single (time_counter:73) (deptht:31) (y:149) (x:182)
 ![5](./dyna_grid_T_5.PNG)
 
@@ -209,7 +218,9 @@
 ### 3.13 [13] soleaeiw of type Single (time_counter:73) (y:149) (x:182)
 ![13](./dyna_grid_W_13.PNG)
 
+# ==========================================================
 
+# Part II  PISCES MODEL DataSet
 
 
 
@@ -219,150 +230,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <font color=red>RED</font>
-  [link](www.google.com)
-  
-  
-                  
->>hhh
-
-> The overriding design goal for Markdown's
->>>hhh
->>>hhj
-
-- Table
-<table style="width:100%">
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td> 
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td> 
-    <td>94</td>
-  </tr>
-</table>
-
-jjj
-
-<table style="width:100%" >
-  <tr>
-    <td bgcolor=red>hhhh I am  red</td>
-  
-  </tr>
-</table>
-
-This text you see here is *actually* written in Markdown! To get a feel for Markdown's syntax, type some text into the left window and watch the results in the right.
-
-
-
-
-```sh
-$ cd dillinger
-$ npm install -d
-$ node app
-```
-
-For production environments...
-
-```sh
-$ npm install --production
-$ NODE_ENV=production node app
-```
-
-
-
-
-### Development
-
-Want to contribute? Great!
-
-Dillinger uses Gulp + Webpack for fast developing.
-Make a change in your file and instantanously see your updates!
-
-Open your favorite Terminal and run these commands.
-
-First Tab:
-```sh
-$ node app
-```
-
-Generating pre-built zip archives ***for distribution:***
-
-```sh
-cd dillinger
-docker build -t joemccann/dillinger:${package.json.version} .
-```
-This will create the dillinger image and pull in the necessary dependencies. Be sure to swap out `${package.json.version}` with the actual version of Dillinger.
-
-Once done, run the Docker image and map the port to whatever you wish on your host. In this example, we simply map port 8000 of the host to port 8080 of the Docker (or whatever port was exposed in the Dockerfile):
-
-```sh
-docker run -d -p 8000:8080 --restart="always" <youruser>/dillinger:${package.json.version}
-```
-
-Verify the deployment by navigating to your server address in your preferred browser.
-
-```sh
-127.0.0.1:8000
-```
